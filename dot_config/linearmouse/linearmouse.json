@@ -1,0 +1,31 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.2",
+  "schemes" : [
+    {
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.1419
+      },
+      "if" : {
+        "app" : "com.amethyst.Amethyst",
+        "device" : {
+          "productName" : "Aerox 3 WL",
+          "productID" : "0x183a",
+          "category" : "mouse",
+          "vendorID" : "0x111"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : false
+        },
+        "acceleration" : {
+          "vertical" : 0.2
+        },
+        "speed" : {
+          "vertical" : 16.1
+        }
+      }
+    }
+  ]
+}
