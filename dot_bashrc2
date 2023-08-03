@@ -1,0 +1,27 @@
+
+
+# Commands that should be applied only for interactive shells.
+[[ $- == *i* ]] || return
+
+HISTFILESIZE=100000
+HISTSIZE=10000
+
+shopt -s histappend
+shopt -s checkwinsize
+shopt -s extglob
+shopt -s globstar
+shopt -s checkjobs
+
+
+#defaults
+export EDITOR=code
+
+#oh-my-posh
+eval "$(oh-my-posh init bash)"
+#eval "$(oh-my-posh init bash --config https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json)"
+
+#auto completion
+source <(kubectl completion bash)
+alias k=kubectl
+complete -o default -F __start_kubectl k
+
