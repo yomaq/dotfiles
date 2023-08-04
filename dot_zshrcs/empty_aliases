@@ -1,0 +1,1 @@
+alias nix-update="chezmoi update;git -C ~/nix/nix-config/ pull ;darwin-rebuild switch --flake ~/nix/nix-config/. "
