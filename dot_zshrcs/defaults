@@ -1,3 +1,6 @@
 
 
 EDITOR=code
+
+
+export PATH=/opt/homebrew/bin:$PATH
